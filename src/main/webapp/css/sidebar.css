@@ -1,0 +1,95 @@
+
+
+/*Codigo para los menus laterales*/
+.menu-lateral-title-body{
+	background-color: #71a447!important;
+	margin-bottom: 5px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	padding-left: 9px;
+	border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.menu-lateral-title{
+	font-size: 13pt;
+	color: #ffffff;
+	text-align: center;
+
+}
+
+.menu-lateral-body{
+	background-color: #EAFDE6;
+	margin-bottom: 5px;
+	margin-top:5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 9px;
+	border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+	/*border: 1px solid #dadada!important;*/
+}
+
+.menu-lateral-text{
+	color: #2A044A;
+	font-size: 12px;
+}
+
+.sub-menu-lateral-body{
+	background-color: #e4edec;
+	margin-bottom: 0px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 15px;
+	border: none;
+
+}
+
+li.menu-lateral-text{
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #dadada!important;
+}
+/*Fin Codigo para los menus laterales*/
+
+
+a {
+    color: #0B2E59;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+    color: whitesmoke;
+    text-decoration: none;
+    background-color: #A0C55F;
+    font-weight: bolder;
+}
+
+
+
+.input-group-addon {
+	padding: 6px 12px;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 1;
+	color: white;
+	text-align: center;
+	background-color: #A0C55F;
+	border: 1px solid #404A2F;
+	border-radius: 4px;
+        
+}
+
+.btn-default:hover, .btn-default.hover {
+    background-color: #A0C55F !important;
+}
+
+th{
+    background: #71a447 !important;
+    color:white;
+}
