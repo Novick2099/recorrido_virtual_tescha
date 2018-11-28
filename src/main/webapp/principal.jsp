@@ -29,7 +29,7 @@
 
 
 
-            <!--Inicio Codigo menu lateral-->
+            <!--Inicio Codigo menu lateral-->  <!-- Prueba de GITHUB -->
             <div class="col-xs-12 col-sm-4 col-md-3 col-lg-2">
                 <div class="panel panel-default" style="border:none">
                     <div class="panel-heading menu-lateral-title-body">
