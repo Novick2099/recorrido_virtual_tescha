@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>Carreras_Servlet</servlet-name>
+        <servlet-class>controlador.Carreras_Servlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>materias_servlet</servlet-name>
+        <servlet-class>controlador.materias_servlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Cat_aula_servlet</servlet-name>
+        <servlet-class>controlador.Cat_aula_servlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>empleado_servlet</servlet-name>
+        <servlet-class>controlador.empleado_servlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Carreras_Servlet</servlet-name>
+        <url-pattern>/Carreras_Servlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>materias_servlet</servlet-name>
+        <url-pattern>/materias_servlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Cat_aula_servlet</servlet-name>
+        <url-pattern>/Cat_aula_servlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>empleado_servlet</servlet-name>
+        <url-pattern>/empleado_servlet</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>

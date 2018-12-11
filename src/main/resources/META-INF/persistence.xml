@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="recorridoVirtualJPAPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>entidades.Aula</class>
+    <class>entidades.Cargo</class>
+    <class>entidades.Carrera</class>
+    <class>entidades.CatAula</class>
+    <class>entidades.Curso</class>
+    <class>entidades.Departamento</class>
+    <class>entidades.Dia</class>
+    <class>entidades.Edificio</class>
+    <class>entidades.Empleado</class>
+    <class>entidades.EmpleadoCargo</class>
+    <class>entidades.FuncionCargo</class>
+    <class>entidades.Horario</class>
+    <class>entidades.HorarioCargo</class>
+    <class>entidades.HorarioDia</class>
+    <class>entidades.Materia</class>
+    <class>entidades.Rubrica</class>
+    <exclude-unlisted-classes>false</exclude-unlisted-classes>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/recorrido_virtual5?zeroDateTimeBehavior=convertToNull"/>
+      <property name="javax.persistence.jdbc.user" value="root"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.password" value=""/>
+    </properties>
+  </persistence-unit>
+</persistence>

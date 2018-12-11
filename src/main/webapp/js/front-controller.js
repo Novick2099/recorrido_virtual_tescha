@@ -1,7 +1,6 @@
-
 $(document).ready(function () {
-    cargar_v_aulas();
-    cargar_v_materias();
+    load_v_aulas();
+    load_v_materias();
     load_admin_cargos();
     load_carreras();
     load_cat_aulas();
@@ -9,21 +8,24 @@ $(document).ready(function () {
     load_empleados();
     load_rubricas();
     load_admin_cursos();
-
 });
 
-function cargar_v_aulas() {
+function load_v_aulas() {
     $("#link_aulas").click(function (event) {
         event.preventDefault();
         $('#contenedor_principal').load("control_aulas.jsp");
     });
 }
 
-function cargar_v_materias() {
+function load_v_materias() {
+    var datos="";
     $('#link_materias').click(function(event){
         event.preventDefault();
-        $('#contenedor_principal').load("control_materias.jsp")
-        
+        //$('#contenedor_principal').load("control_materias.jsp")
+        var datos="action=cargar_registros";
+        $.post("materias_servlet",datos,function(data){
+            $('#contenedor_principal').html(data);
+        });
     });
 }
 
@@ -32,25 +34,36 @@ function load_admin_cargos(){
         event.preventDefault();
         $('#contenedor_principal').load("admin_cargos.jsp");
     });
-    
 }
 
 function load_carreras(){
+    datos="";
     $('#link_carreras').click(function(event){
         event.preventDefault();
-        $('#contenedor_principal').load("admin_Carreras.jsp");
-        
+        //$('#contenedor_principal').load("admin_Carreras.jsp");
+        var datos="action=cargar_registros";
+        $.post("Carreras_Servlet",datos,function(data){
+            
+            $('#contenedor_principal').html(data);
+        });        
     });
 }
+
+
 
 function load_cat_aulas(){
     $('#link_cat_aulas').click(function(event){
         event.preventDefault();
-        $('#contenedor_principal').load("admin_cat_aulas.jsp");
+        //$('#contenedor_principal').load("admin_cat_aulas.jsp");
+        datos="action=cargar_registros";
+        $.post("Cat_aula_servlet",datos,function(data){
+            $('#contenedor_principal').html(data);
+        });
     });
 }
 
 function load_edificios(){
+    var datos="";
     $('#link_cat_edificios').click(function(event){
         event.preventDefault();
         $('#contenedor_principal').load("admin_edificios.jsp");
@@ -61,7 +74,11 @@ function load_empleados(){
     $('#link_empleados').click(function(event){
 
         event.preventDefault();
-        $('#contenedor_principal').load("admin_empleados.jsp");
+        //$('#contenedor_principal').load("admin_empleados.jsp");
+        $.post("empleado_servlet",datos,function(data){
+            $('#contenedor_principal').html(data);
+            
+        });
     });
     
 }
@@ -79,4 +96,15 @@ function load_admin_cursos(){
         $('#contenedor_principal').load('admin_cursos.jsp');
     });
 }
+
+
+
+
+
+
+
+
+
+
+
 
